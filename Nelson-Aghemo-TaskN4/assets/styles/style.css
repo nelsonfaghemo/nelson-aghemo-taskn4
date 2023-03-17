@@ -1,0 +1,826 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Header en desktop*/
+header {
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: orange;
+}
+
+/* Navbar en desktop */
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 4rem;
+}
+
+.nav-anchors-container {
+  margin-left: 1rem;
+}
+
+.nav-anchor-active {
+  text-decoration: none;
+  color: white;
+  padding: 8px 8px 8px 8px;
+  background-color: orange;
+  border-radius: 15px;
+  margin-right: 0.5rem;
+  transition-duration: 0.4s;
+}
+
+.nav-anchor-active:hover {
+  color: orange;
+  background-color: white;
+}
+
+.nav-anchor-individual {
+  text-decoration: none;
+  color: orange;
+  padding: 8px 8px 8px 8px;
+  background-color: white;
+  border-radius: 15px;
+  margin-right: 0.5rem;
+  transition-duration: 0.4s;
+}
+
+.nav-anchor-individual:hover {
+  color: white;
+  background-color: orange;
+}
+
+#logo {
+  margin-right: 1rem;
+  height: 3rem;
+}
+
+.titles {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main del index */
+
+.mainindex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#indexbanner {
+  width: 50rem;
+  height: 18rem;
+  object-fit: cover;
+  object-position: top;
+  border: 0.2rem dashed orange;
+}
+
+.indexarticles {
+  width: 50rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#indexspan {
+  color: rgb(18, 16, 19);
+  width: 20rem;
+}
+
+#indeximage {
+  width: 20rem;
+  height: 17rem;
+  border: 0.2rem dashed orange;
+  object-fit: cover;
+}
+
+/* Main About Us */
+
+.mainaboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedoraboutus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45rem;
+  height: 12rem;
+}
+
+.imageaboutus {
+  width: 12rem;
+  height: 8rem;
+  object-fit: cover;
+  border: 0.1rem dashed orange;
+}
+
+.spanaboutus {
+  color: rgb(18, 16, 19);
+  width: 25rem;
+}
+
+/* Main Contact Us */
+
+.maincontactus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contactusimg {
+  width: 30rem;
+  height: 20rem;
+  object-fit: cover;
+  border: 0.2rem dashed orange;
+}
+
+#contactusp {
+  text-align: center;
+}
+
+#divcontact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#emaildiv {
+  margin-right: 15rem;
+}
+
+/* Schedule Main*/
+
+.schedulemain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table,
+table,
+tr,
+td,
+th {
+  text-align: center;
+  border: 0.1rem solid orange;
+  padding: 0.5rem;
+}
+
+/* Benefits and tips main*/
+
+.benefitsandtipsmain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.batdiv {
+  flex-direction: row;
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.batimg {
+  height: 10rem;
+  width: 8rem;
+  object-fit: cover;
+  border: 0.2rem dashed orange;
+  margin-right: 3rem;
+}
+
+/* Main Raffle */
+
+.mainraffle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedordeimagenesraffle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.raffleimg {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 18rem;
+  height: 10rem;
+  object-fit: cover;
+  border: 0.2rem dashed orange;
+}
+
+.divform {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+fieldset {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.terminos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.vitalcheck {
+  margin-right: 0.2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: orange;
+  height: 9rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* Index MEDIA QUERY */
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 4rem;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+  .nav-anchors-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 4rem;
+    font-size: small;
+  }
+  .nav-anchor-active {
+    text-decoration: none;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    background-color: orange;
+    border-radius: 0px;
+    margin-right: 0.2rem;
+    transition-duration: 0.4s;
+  }
+
+  .nav-anchor-active:hover {
+    color: white;
+    background-color: orange;
+  }
+
+  .nav-anchor-individual {
+    text-decoration: none;
+    color: orange;
+    padding: 0px 0px 0px 0px;
+    background-color: white;
+    border-radius: 0px;
+    margin-right: 0.2rem;
+    transition-duration: 0.4s;
+  }
+
+  .nav-anchor-individual:hover {
+    color: white;
+    background-color: orange;
+  }
+  #logo {
+    justify-self: flex-start;
+    height: 2rem;
+  }
+  #indexbanner {
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: top;
+    border: 0.2rem dashed orange;
+  }
+  .indexarticles {
+    width: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #indexspan {
+    color: rgb(18, 16, 19);
+    width: 20rem;
+    text-align: center;
+  }
+
+  #indeximage {
+    width: 15rem;
+    height: 15rem;
+    border: 0.2rem dashed orange;
+    object-fit: cover;
+  }
+
+  /* ABOUT US MEDIA QUERY */
+
+  .mainaboutus {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contenedoraboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20rem;
+    height: 18rem;
+    text-align: center;
+  }
+
+  .imageaboutus {
+    width: 12rem;
+    height: 8rem;
+    object-fit: cover;
+    border: 0.1rem dashed orange;
+  }
+
+  .spanaboutus {
+    color: rgb(18, 16, 19);
+    width: 15rem;
+  }
+
+  /* Contact us media query */
+
+  .maincontactus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contactusimg {
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 0.2rem dashed orange;
+  }
+
+  #contactusp {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #divcontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  #emaildiv {
+    margin-right: 0rem;
+  }
+
+  /* SCHEDULE MEDIA QUERY */
+  .schedulemain {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+  }
+  .table {
+    display: flex;
+    justify-content: center;
+  }
+  .table,
+  table,
+  tr,
+  td,
+  th {
+    text-align: center;
+    border: 0.1rem solid orange;
+    padding: 0rem;
+  }
+
+  /* Benefits and tips MEDIA QUERY*/
+  .benefitsandtipsmain {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .batdiv {
+    flex-direction: column;
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .batimg {
+    height: 10rem;
+    width: 15rem;
+    object-fit: cover;
+    border: 0.2rem dashed orange;
+    margin-right: 0rem;
+  }
+
+  /* RAFFLE MEDIA QUERY*/
+
+  .mainraffle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contenedordeimagenesraffle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .raffleimg {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 18rem;
+    height: 10rem;
+    object-fit: cover;
+    border: 0.2rem dashed orange;
+  }
+
+  .divform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+  }
+
+  form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .terminos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .vitalcheck {
+    margin-right: 0.2rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    height: 9rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Index MEDIA QUERY */
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 4rem;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+  .nav-anchors-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 4rem;
+    font-size: small;
+  }
+  .nav-anchor-active {
+    text-decoration: none;
+    color: white;
+    padding: 2px 2px 2px 2px;
+    background-color: orange;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    transition-duration: 0s;
+  }
+
+  .nav-anchor-active:hover {
+    color: white;
+    background-color: orange;
+  }
+
+  .nav-anchor-individual {
+    text-decoration: none;
+    color: orange;
+    padding: 2px 2px 2px 2px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    transition-duration: 0s;
+  }
+
+  .nav-anchor-individual:hover {
+    color: white;
+    background-color: orange;
+  }
+  #logo {
+    justify-self: flex-start;
+    height: 2.5rem;
+  }
+  #indexbanner {
+    width: 25rem;
+    height: 12rem;
+    object-fit: cover;
+    object-position: top;
+    border: 0.2rem dashed orange;
+  }
+  .indexarticles {
+    width: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #indexspan {
+    color: rgb(18, 16, 19);
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #indeximage {
+    width: 15rem;
+    height: 15rem;
+    border: 0.2rem dashed orange;
+    object-fit: cover;
+  }
+
+  /* ABOUT US MEDIA QUERY */
+
+  .mainaboutus {
+    width: 48rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contenedoraboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20rem;
+    height: 18rem;
+    text-align: center;
+  }
+
+  .imageaboutus {
+    width: 20rem;
+    height: 12rem;
+    object-fit: cover;
+    border: 0.1rem dashed orange;
+  }
+
+  .spanaboutus {
+    color: rgb(18, 16, 19);
+    width: 15rem;
+  }
+
+  /* Contact us media query */
+
+  .maincontactus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contactusimg {
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 0.2rem dashed orange;
+  }
+
+  #contactusp {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #divcontact {
+    display: flex;
+    width: 30rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  #emaildiv {
+    margin-right: 0rem;
+  }
+
+  /* SCHEDULE MEDIA QUERY */
+  .schedulemain {
+    width: 48rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+  }
+  .table {
+    display: flex;
+    justify-content: center;
+  }
+  .table,
+  table,
+  tr,
+  td,
+  th {
+    text-align: center;
+    border: 0.1rem solid orange;
+    padding: 0.4rem;
+  }
+
+  /* Benefits and tips MEDIA QUERY*/
+  .benefitsandtipsmain {
+    width: 48rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .batdiv {
+    flex-direction: column;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .batimg {
+    height: 10rem;
+    width: 15rem;
+    object-fit: cover;
+    border: 0.2rem dashed orange;
+    margin-right: 0rem;
+  }
+
+  /* RAFFLE MEDIA QUERY*/
+
+  .mainraffle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contenedordeimagenesraffle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .raffleimg {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 18rem;
+    height: 10rem;
+    object-fit: cover;
+    border: 0.2rem dashed orange;
+  }
+
+  .divform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+  }
+
+  form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .terminos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .vitalcheck {
+    margin-right: 0.2rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    height: 9rem;
+  }
+}
